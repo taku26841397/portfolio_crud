@@ -27,9 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['portfolio-crud-j2ow.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://portfolio-crud-j2ow.onrender.com/'
-]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -133,3 +131,11 @@ MEDIA_ROOT=BASE_DIR / 'media_local'
 LOGIN_URL='login'
 LOGIN_REDIRECT_URL='list'
 LOGOUT_REDIRECT_URL='top'
+
+
+#追加
+CSRF_TRUSTED_ORIGINS = [
+    'https://portfolio-crud-j2ow.onrender.com/'
+]
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
