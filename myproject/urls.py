@@ -29,6 +29,7 @@ urlpatterns = [
     path('crud/detail/<int:pk>',views.ProductDetailView.as_view(),name="detail"),
     path('login/',views.LoginView.as_view(),name="login"),
     path('logout/',views.LogoutView.as_view(),name="logout"),
+    path('create-testuser/',create_test_user),
 ]
 
 if settings.DEBUG:

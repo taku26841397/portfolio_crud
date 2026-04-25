@@ -7,6 +7,12 @@ from django.urls import reverse
 from django.contrib.auth.views import LoginView,LogoutView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
+from django.http import HttpResponse
+
+def create_test_user(request):
+    User.objects.create_user('testuser',password='testpass123')
+    return HttpResponse("testuser created")
 
 
 class TopView(TemplateView,LoginRequiredMixin):
