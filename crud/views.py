@@ -15,7 +15,7 @@ def create_test_user(request):
     return HttpResponse("testuser created")
 
 
-class TopView(TemplateView,LoginRequiredMixin):
+class TopView(LoginRequiredMixin,TemplateView):
     template_name = "top.html"
     login_url = '/login/'
 
