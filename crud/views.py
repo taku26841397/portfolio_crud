@@ -9,8 +9,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import AuthenticationForm
 
 
-class TopView(TemplateView):
+class TopView(TemplateView,LoginRequiredMixin):
     template_name = "top.html"
+    login_url = '/login/'
 
 class ProductListView(LoginRequiredMixin,ListView):
     model=Product
