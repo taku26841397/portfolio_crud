@@ -18,6 +18,7 @@ from django.urls import path
 from crud import views
 from django.conf import settings
 from django.conf.urls.static import static
+from crud.views import create_test_user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
