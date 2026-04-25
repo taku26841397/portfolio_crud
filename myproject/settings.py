@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--&(=p=fm-b1_+q309z3pcb=3=rlz*3od($i+$w*ai+&(ar=ht5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://portfolio-crud-j2ow.onrender.com']
+ALLOWED_HOSTS = ['portfolio-crud-j2ow.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://portfolio-crud-j2ow.onrender.com/'
