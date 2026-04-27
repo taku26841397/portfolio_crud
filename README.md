@@ -59,3 +59,31 @@ https://（あなたのRenderのURL）
 ---
 
 ## 📁 ディレクトリ構成（抜粋）
+
+- crud/　：本棚アプリのメイン機能（モデル・ビュー・テンプレート）
+- media_local/　：アップロードした本の表紙画像を保存
+- myproject/　：Django プロジェクト設定（settings.py など）
+- manage.py　：Django の起動スクリプト
+- requirements.txt　：使用パッケージ一覧
+- Procfile　：Render デプロイ用設定
+
+- ## 📁 crud アプリの構成
+
+crud/
+  - migrations/        ← DB マイグレーション
+  - templates/         ← HTML テンプレート
+  - admin.py           ← 管理画面の設定
+  - apps.py            ← アプリ設定
+  - models.py          ← 本のデータモデル
+  - views.py           ← CRUD の処理（一覧・詳細・作成・編集・削除）
+  - urls.py            ← アプリ内の URL ルーティング
+  - tests.py           ← テスト（未使用）
+  - __init__.py
+
+
+
+---
+
+## 📄 ライセンス
+このプロジェクトは学習目的で作成したものです。
+
