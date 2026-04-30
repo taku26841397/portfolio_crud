@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure--&(=p=fm-b1_+q309z3pcb=3=rlz*3od($i+$w*ai+&(ar=ht5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-crud-j2ow.onrender.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'portfolio-crud-j2ow.onrender.com',]
 
 
 # Application definition
@@ -135,7 +138,7 @@ LOGOUT_REDIRECT_URL='top'
 
 #追加
 CSRF_TRUSTED_ORIGINS = [
-    'https://portfolio-crud-j2ow.onrender.com/'
+    'https://portfolio-crud-j2ow.onrender.com'
 ]
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
