@@ -8,7 +8,7 @@
         <thead>
         <tr>
             <th>商品名</th>
-            <th>価格</th>
+            <th>概要</th>
             <th>カテゴリ</th>
             <th>画像</th>
             <th>アクション</th>
@@ -17,7 +17,7 @@
         {% for product in object_list %}
         <tr>
             <td>{{product.name}}</td>
-            <td>{{product.price}}円</td>
+            <td>{{product.overview}}</td>
             <td>{{product.category}}</td>
             <td><img src="{{product.img.url}}" style="width:100px"></td>
             <td>

@@ -3,7 +3,7 @@ from .models import Product,Category
 from django.utils.safestring import mark_safe
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display=('id','name','price','category','image')
+    list_display=('id','name','overview','category','image')
     search_fields = ('name',)
     list_filter = ('category',)
 

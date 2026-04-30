@@ -9,7 +9,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name=models.CharField(max_length=200)
-    price=models.PositiveIntegerField()
+    overview=models.CharField(max_length=200,db_column='price')
 
     category=models.ForeignKey(Category,on_delete=models.CASCADE, db_column="category_id")
     img=models.ImageField(blank=True,default='noImage.png')
