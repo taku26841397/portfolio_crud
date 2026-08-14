@@ -7,7 +7,7 @@
 ---
 
 ## 🌐 公開 URL
-https://（あなたのRenderのURL）
+https://portfolio-crud-j2ow.onrender.com/
 
 ---
 
